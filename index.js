@@ -8,7 +8,7 @@ function SendCityToSearch() {
     cityToSearchInput.value = ''
     const result = document.getElementById('result');
 
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityToSearch}&appid=${API_KEY}&lang=pt_br`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityToSearch}&appid=${API_KEY}&lang=pt_br`)
         .then(response => {
             if (response.ok) {
                 return response.json();
@@ -38,7 +38,7 @@ function SendCityToSearch() {
             <p>Sigla País: ${data.sys.country}</p>
             <p>Temperatura: ${temperature} °C  ${ temperature > 30 ? '🥵' : (temperature < 25 ? '🥶' : '😃') }</p>
             <p>Clima atual: ${data.weather[0].description}
-                <img style="vertical-align: middle" src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="${data.weather[0].description}"/>
+                <img style="vertical-align: middle" src="https://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="${data.weather[0].description}"/>
             </p>
             <p>Umidade: ${data.main.humidity} %</p>
             <p>Velocidade dos ventos: ${data.wind.speed} m/s</p>
