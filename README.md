@@ -9,6 +9,12 @@ Projeto desenvolvimento para o desafio interno do grupo Code's Moon Technologies
 
 >*A API Key da Open Weather Map está pública neste repositório, peço que não utilize-a para ambiente de produção, mas, seja livre para utilizá-la ao testar meu sistema ou para desenvolver o seu próprio*
 
+## Imagem
+
+> O tema do website muda de acordo com o horário do local que você pesquisou
+
+<img alt="printscreen" width="300px" src="https://cdn.discordapp.com/attachments/734097146420265013/762878953395453992/AAAAAElFTkSuQmCC.png">
+
 ## Desafio
 
 Um programa sobre o clima em que o usuário receba as condições do clima (temperatura atual, umidade e intensidade dos ventos, etc) e se é dia ou noite. O programa deve funcionar através de uma API.
