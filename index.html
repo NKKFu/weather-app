@@ -10,9 +10,9 @@
     <link rel="icon" href="https://www.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png">
 </head>
 
-<body>
+<body onload="loadFirstPage()">
     <div id="main" class="dark">
-        <h1 onclick="location.reload()">Clima APP | Weather</h1>
+        <h1 onclick="loadFirstPage()">Clima APP | Weather 🥶</h1>
 
         <form id="search-form" autocomplete="off">
             <div class="autocomplete" style="width:300px;">
@@ -22,13 +22,11 @@
         </form>
 
         <div id="result">
-            <h2>Cidades pré-definidas</h2>
-            <p class="pre-city" onclick="SearchByCity('Manaus')">Manaus</p>
-            <p class="pre-city" onclick="SearchByCity('Recife')">Recife</p>
-            <p class="pre-city" onclick="SearchByCity('São Paulo')">São Paulo</p>
-            <p class="pre-city" onclick="SearchByCity('Florianópolis')">Florianópolis</p>
-            <p class="pre-city" onclick="SearchByCity('Goiânia')">Goiânia</p>
         </div>
+
+        <a href="https://github.com/NKKFu/weather-app" class="footer" style="margin: auto auto 0 auto">
+            Feito com 💖 no Github
+        </a>
     </div>
 
     <script src="autocomplete.js"></script>

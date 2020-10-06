@@ -13,6 +13,10 @@
     h1 {
         margin-bottom: 20px;
         cursor: pointer;
+        transition: color 0.2s;
+        &:hover {
+            color: rgb(172, 172, 172);
+        }
     }
     #result {
         margin-top: 20px;
@@ -29,6 +33,7 @@
             font-weight: bold;
             color: #cfcfcf;
             cursor: pointer;
+            max-width: max-content;
             transition: color 0.3s;
             &:hover {
                 color: #FFF;
@@ -50,6 +55,27 @@
             &:hover {
                 background-color: rgb(73, 41, 161);
             }
+        }
+    }
+    .mylocation-button {
+        cursor: pointer;
+        margin-top: 20px;
+        background-color: #bd93f9;
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 5px;
+        &:hover {
+            background-color: #9061d3;
+        }
+    }
+    .footer {
+        font-weight: bold;
+        color: #8f9099;
+        text-decoration: none;
+        transition: color 0.3s;
+        &:hover {
+            color: #696a72;
         }
     }
 }
